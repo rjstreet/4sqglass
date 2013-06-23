@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'local_trending_venues'
+require_relative 'local_trending_venues'
 
 get '/' do
   test = LocalTrendingVenues.new
