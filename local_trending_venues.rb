@@ -9,9 +9,9 @@ class LocalTrendingVenues
 
     venues = @client.trending_venues('38.052248,-78.513895')
     if( venues.venues.nil? )
-      'Nothing trending here!'
+      return 'Nothing trending here!'
     else
-      venues.venues.count
+      return venues.venues.count
     end
   end
 end
