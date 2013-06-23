@@ -9,6 +9,6 @@ class LocalTrendingVenues
 
 #    venues = @client.trending_venues('38.052248,-78.513895')
       venues = @client.trending_venues("36.132832,-115.151827", { :radius => 10000 })
-    venues.first.name
+    venues.first
   end
 end
