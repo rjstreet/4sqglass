@@ -9,10 +9,11 @@ class LocalTrendingVenues
 
 #    venues = @client.trending_venues('38.052248,-78.513895')
     venues = @client.search_venues(:ll => '38.052248,-78.513895', :query => 'coffee')
-    if venues.venues.empty?
+#    if venues.venues.empty?
+  if venues.empty?
       'Empty!  Hah!'
     else
-      'Well...crap...'
+      venues.to_s
     end
   end
 end
