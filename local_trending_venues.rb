@@ -13,7 +13,7 @@ class LocalTrendingVenues
   if venues.empty?
       'Empty!  Hah!'
     else
-      venues.to_s
+      venues.first.to_s
     end
   end
 end
